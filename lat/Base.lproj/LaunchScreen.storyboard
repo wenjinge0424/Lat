@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yc2-iC-abB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jp5-Sz-VDG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="m0Q-az-PIR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="log_text.png" translatesAutoresizingMaskIntoConstraints="NO" id="u5m-Py-sGS">
+                                <rect key="frame" x="46" y="152.5" width="283" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="u5m-Py-sGS" secondAttribute="height" multiplier="1553:670" id="fU4-cx-swc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_ballon.png" translatesAutoresizingMaskIntoConstraints="NO" id="D3a-Yz-JNI">
+                                <rect key="frame" x="157" y="568" width="60" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="D3a-Yz-JNI" secondAttribute="height" multiplier="382:503" id="Pan-8I-45O"/>
+                                    <constraint firstAttribute="width" constant="60" id="rIs-jb-7mD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="u5m-Py-sGS" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-120" id="Bx0-Q4-qqT"/>
+                            <constraint firstItem="m0Q-az-PIR" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Dqw-rh-Bfq"/>
+                            <constraint firstItem="D3a-Yz-JNI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="IHl-ym-I3S"/>
+                            <constraint firstItem="Jp5-Sz-VDG" firstAttribute="top" secondItem="m0Q-az-PIR" secondAttribute="bottom" id="PE5-mB-8kb"/>
+                            <constraint firstAttribute="trailing" secondItem="m0Q-az-PIR" secondAttribute="trailing" id="gie-E3-TQB"/>
+                            <constraint firstItem="m0Q-az-PIR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="lr9-TK-Psa"/>
+                            <constraint firstItem="u5m-Py-sGS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="pBm-uR-cAp"/>
+                            <constraint firstItem="u5m-Py-sGS" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="46" id="vKS-yn-7L4"/>
+                            <constraint firstItem="Jp5-Sz-VDG" firstAttribute="top" secondItem="D3a-Yz-JNI" secondAttribute="bottom" constant="20" id="ycp-7z-rDK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_ballon.png" width="382" height="503"/>
+        <image name="bg_splash.png" width="2107" height="3746"/>
+        <image name="log_text.png" width="1553" height="670"/>
+    </resources>
+</document>
